@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Received</title>
+</head>
+<body>
+    <h1>Thank you, you may enter</h1>
+    <button>Next in line</button>
+    <script>
+        document.querySelector('button').addEventListener('click', reload)
+        function reload() {
+            window.location.href = '/';
+        }
+        setTimeout(() => {
+            reload()
+        }, 5000)
+    </script>
+    
+</body>
+</html>
